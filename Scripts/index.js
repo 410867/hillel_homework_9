@@ -32,52 +32,26 @@ for (let count = 1; count <= 10; count++) {                     //Виведен
     str += `7 * ${count} = ${7 * count};\n`;
 }
 
-//primeNumber-просте число
-for (let primeNumber = 1; primeNumber <= 15; primeNumber++) {   //Виведення суми всіх цілих чисел від 1 до 15
-    let count = 0;
-    for (let divider = 1; divider <= primeNumber; divider++) {      //divider-дільник
-        if((primeNumber % divider) === 0) {
-            count++;
-        }
-    }
-    if(count === 2) {
-        sum += primeNumber;
-    }
-    if (primeNumber === 15) {
+for (let count = 1; count <= 15; count++) {   //Виведення суми всіх цілих чисел від 1 до 15
+    sum += count;
+    if (count === 15) {
         console.log(`Сума всіх цілих чисел від 1 до 15: ${sum}`);
     }
 }
 
-//primeNumber-просте число
-for (let primeNumber = 15; primeNumber <= 35; primeNumber++) {  //Виведення добутку всіх цілих чисел від 15 до 35
-    let count = 0;
-    for (let divider = 1; divider <= primeNumber; divider++) {      //divider-дільник
-        if((primeNumber % divider) === 0) {
-            count++;
-        }
-    }
-    if(count === 2) {
-        product *= primeNumber;
-    }
-    if (primeNumber === 35) {
+for (let count = 15; count <= 35; count++) {  //Виведення добутку всіх цілих чисел від 15 до 35
+    product *= count;
+    if (count === 35) {
         console.log(`Добуток усіх цілих чисел від 15 до 35: ${product}`);
     }
 }
 
 sum = 0;
 let numberOfIntegers = 0;       //Кількість цілих чисел
-for (let primeNumber = 1; primeNumber <= 500; primeNumber++) {  //Виведення середнього арифметичного всіх цілих чисел від 1 до 500
-    let count = 0;
-    for (let divider = 1; divider <= primeNumber; divider++) {
-        if((primeNumber % divider) === 0) {
-            count++;
-        }
-    }
-    if(count === 2) {
-        sum += primeNumber;
-        numberOfIntegers++;
-    }
-    if (primeNumber === 500) {
+for (let count = 1; count <= 500; count++) {  //Виведення середнього арифметичного всіх цілих чисел від 1 до 500
+    sum += count;
+    numberOfIntegers++;
+    if (count === 500) {
         console.log(`Середнє арифметичне всіх цілих чисел від 1 до 500: ${Number((sum/numberOfIntegers).toFixed(3))}`);
     }
 }
